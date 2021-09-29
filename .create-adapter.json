@@ -1,0 +1,52 @@
+{
+	"expert": "yes",
+	"cli": false,
+	"adapterName": "realweather",
+	"title": "realweather",
+	"description": "Real Weather for Vis",
+	"keywords": [
+		"Weather"
+	],
+	"features": [
+		"adapter",
+		"vis"
+	],
+	"adminFeatures": [
+		"custom"
+	],
+	"type": "visualization-widgets",
+	"startMode": "subscribe",
+	"connectionType": "local",
+	"dataSource": "poll",
+	"connectionIndicator": "yes",
+	"adapterSettings": [
+		{
+			"key": "Sound",
+			"inputType": "checkbox",
+			"defaultValue": true
+		},
+		{
+			"key": "Weather State",
+			"inputType": "number",
+			"defaultValue": 0
+		}
+	],
+	"language": "JavaScript",
+	"adminReact": "no",
+	"releaseScript": "yes",
+	"indentation": "Tab",
+	"quotes": "double",
+	"es6class": "yes",
+	"tools": [
+		"ESLint",
+		"type checking"
+	],
+	"authorName": "spayrosam",
+	"authorGithub": "spayrosam",
+	"authorEmail": "spayrosam@gmail.com",
+	"gitRemoteProtocol": "HTTPS",
+	"license": "MIT License",
+	"dependabot": "no",
+	"target": "github",
+	"creatorVersion": "2.0.1"
+}

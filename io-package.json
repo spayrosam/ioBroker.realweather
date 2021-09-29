@@ -1,0 +1,106 @@
+{
+	"common": {
+		"name": "realweather",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "realweather",
+		"titleLang": {
+			"en": "realweather",
+			"de": "echtes Wetter",
+			"ru": "реальная погода",
+			"pt": "clima real",
+			"nl": "echt weer",
+			"fr": "temps réel",
+			"it": "tempo reale",
+			"es": "clima real",
+			"pl": "prawdziwa pogoda",
+			"zh-cn": "真实天气"
+		},
+		"desc": {
+			"en": "Real Weather for Vis",
+			"de": "Echtes Wetter für Vis",
+			"ru": "Настоящая погода на острове Вис",
+			"pt": "Tempo real para Vis",
+			"nl": "Echt weer voor Vis",
+			"fr": "Météo réelle pour Vis",
+			"it": "Meteo reale per Vis",
+			"es": "Tiempo real para Vis",
+			"pl": "Prawdziwa pogoda dla Vis",
+			"zh-cn": "Vis 的真实天气"
+		},
+		"authors": [
+			"spayrosam <spayrosam@gmail.com>"
+		],
+		"keywords": [
+			"Weather"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "realweather.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/spayrosam/ioBroker.realweather/main/admin/realweather.png",
+		"readme": "https://github.com/spayrosam/ioBroker.realweather/blob/main/README.md",
+		"loglevel": "info",
+		"restartAdapters": [
+			"vis"
+		],
+		"localLinks": {
+			"_default": "%web_protocol%://%ip%:%web_port%/vis/edit.html"
+		},
+		"mode": "subscribe",
+		"type": "visualization-widgets",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"materialize": true,
+		"supportCustoms": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			},
+			"vis"
+		]
+	},
+	"native": {
+		"Sound": true,
+		"Weather State": 0
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
